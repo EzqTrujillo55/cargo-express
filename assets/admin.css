@@ -1,0 +1,311 @@
+/** PRELOADER **/
+
+.main-preloader{
+position:fixed;
+top:0;
+z-index:999999;
+background:rgba(50, 50, 50, 0.85) none repeat scroll 0 0;
+width:100%;
+height:100%;
+display:none;
+}
+
+.main-preloader .inner{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 20%;
+width: 100%;
+}
+
+.ploader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+border-top: 1.1em solid rgba(252,210,6, 0.2);
+  border-right: 1.1em solid rgba(252,210,6, 0.2);
+  border-bottom: 1.1em solid rgba(252,210,6, 0.2);
+  border-left: 1.1em solid #fcd206;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.ploader,
+.ploader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/**END preloader*/
+
+.rounded{
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px; 
+-khtml-border-radius: 2px;
+}
+
+.rounded3{
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; 
+-khtml-border-radius: 3px;
+}
+
+
+.rounded5{
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px; 
+-khtml-border-radius: 5px;
+}
+
+body{
+background:#EDF1F5;
+}
+
+body.login{
+background:#38323a;
+}
+
+.login-wrapper{
+width: 350px;
+margin:auto;
+display:block;
+margin-top:8%;
+}
+
+.grey-box{
+background:#f7f8fa;
+border: 1px solid #d8d8d8;
+}
+
+.inner{
+padding:20px;
+}
+
+.login-wrapper img{
+display:block;
+margin:auto;
+max-width:200px;
+margin-bottom:30px;
+}
+
+.brand-logo img{
+margin-left: 10px;
+margin-top: 6px;
+max-width: 200px;
+max-height:50px;
+}
+
+nav.teal-white{
+background:#FFFFFF;
+}
+nav.teal-white ul a{
+color:#54667A;
+}
+
+#table_list .truncate{
+max-width:150px;
+}
+
+
+.tag{
+display:table;
+padding:3px 10px;
+min-width:60px;
+text-align:center;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px; 
+-khtml-border-radius: 2px;
+}
+.tag.suspended,
+.tag.blocked,
+.tag.draft,
+.tag.expired
+{
+background:#a94442;
+color:#fff;
+}
+.tag.pending{
+background:#777;
+color:#fff;
+}
+.tag.active,
+.tag.published,
+.tag.send
+{
+background:#26a69a;
+color:#fff;
+}
+
+.hide,
+.smtp_wrap,
+.text-editor_val
+{
+display:none;
+}
+
+.website_logo{
+width:100px;
+}
+
+.toast-success{
+background:#26a69a ;
+}
+
+.charts{
+border: 1px solid #ccc;
+margin-top:20px;
+}
+
+#chartdiv{
+width:100%;
+height:430px;
+}
+
+
+.top5{
+margin-top:5px;
+}
+.top10{
+margin-top:10px;
+}
+.top20{
+margin-top:20px;
+}
+.top30{
+margin-top:30px;
+}
+.top40{
+margin-top:40px;
+}
+.top50{
+margin-top:50px;
+}
+
+.bottom10{
+margin-bottom:10px;
+}
+.bottom20{
+margin-bottom:20px;
+}
+.bottom30{
+margin-bottom:30px;
+}
+.pad20{
+padding:20px !important;
+}
+
+.tabs .tab a
+{
+color:#26a69a ;
+}
+
+.tabs .tab a:hover{
+}
+
+.tabs .indicator{
+background:#26a69a;
+}
+
+#nav-mobile{
+height:64px;
+overflow:hidden;
+}
+
+#table_list_paginate a{
+margin-left:20px;
+}
+
+.select-normal{
+display:block !important;
+}
+
+.button-collapse{
+color:#000;
+}
+
+.dataTables_paginate a{
+cursor:pointer;
+display:inline-block;
+padding:5px 10px;
+background:#26a69a ;
+color:#fff;
+
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px; 
+-khtml-border-radius: 2px;
+box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dataTables_paginate a.paginate_disabled_previous,
+.dataTables_paginate a.paginate_disabled_next
+{
+background:#777;
+cursor:text;
+}
+
+.dataTables_paginate{
+margin-top:20px;
+}
+
+#frm-forgotpass{
+display:none;
+}
+
+.nav-wrapper ul a{
+font-size: 14px;
+padding: 0 8px;
+}
+
+.card-content .addpad,
+.addpad
+{
+padding:15px;
+}
+
+
+
+.truncate-text{
+display:block;
+max-width: 150px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.truncate-text.remove-truncate-text{
+max-width: inherit;
+text-overflow: inherit;
+white-space: normal;
+}
+
+#table_list_wrapper{
+overflow:scroll;
+}

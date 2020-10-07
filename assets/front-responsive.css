@@ -1,0 +1,153 @@
+
+@media only screen and (max-width : 1024px) 
+{
+
+.top-menu img.logo{
+border:0px solid red;
+}
+
+}
+
+
+@media only screen and (max-width : 970px) 
+{
+
+.top-menu img.logo{
+border:0px solid yellow;
+}
+
+.top-menu ul li{
+margin-right:10px;
+}
+
+.banner .yellow-col,
+.section-2 .video-wrapper,
+.section-2 .brown-col
+{
+display:none;
+}
+
+#frm-trytrial .yellow-button{
+margin-top:15px;
+}
+
+.section-1 .yellow-col{
+min-height:inherit;
+}
+.section-1 .top150{
+margin-top:30px;
+}
+
+.section-2 .inner{
+padding-bottom:20px;
+}
+
+.page-signup .section-footer .container,
+.page-material .section-footer .container
+{
+width:auto;
+}
+
+.banner input[type="text"]{
+max-width:290px;
+}
+
+
+}
+
+@media only screen and (max-width : 750px) 
+{
+
+.top-menu img.logo{
+border:0px solid green;
+}
+
+.top-menu .text-right ul#top-nav{
+display:none;
+}
+
+.mobile-toggle{
+display:block;
+}
+
+.banner .inner, .section-2 .inner{
+width:auto;
+}
+
+.section-1 img{
+display:block;
+margin:auto;
+}
+
+.section-1 h2,
+.section-1 h4,
+.section-1 p,
+.section-3 h2,
+.section-3 h4,
+.section-3 li,
+.section-4 h2
+{
+text-align:center;
+}
+
+.section-1 h2{
+position:inherit;
+width:auto;
+}
+
+.section-1 .line.margin,
+.section-3 .line.margin,
+.line.margin
+{
+margin:auto;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+.section-1 .line.margin.dim{
+margin-top:10px;
+}
+
+
+.page-index .top-menu{
+position:inherit;
+background:#38323a;
+}
+
+.banner .col{
+padding-top:10px;
+}
+
+}
+
+@media only screen and (max-width : 480px) 
+{
+
+.top-menu img.logo{
+border:0px solid red;
+}
+
+.banner h1,
+.section-1 h2,
+.sections h2,
+price
+{
+font-size:30px;
+}
+.section-2 h1{
+font-size:35px;
+}
+
+.yellow-button.large, .brown-button.large,
+.banner input[type="text"]
+{
+min-width:100%;
+}
+.banner h3{
+font-size:16px;
+}
+
+}
+
+@media only screen and (max-width : 320px)
+{
+}

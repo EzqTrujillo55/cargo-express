@@ -1,0 +1,219 @@
+@media only screen and (max-width : 1350px) 
+{
+
+.login-wrap img,
+.grey-top-header
+{
+border:0px solid white;
+}
+.search-team-wrap #team{
+margin-bottom:5px;
+}
+.search-team-wrap #team,
+.search-team-wrap #search_map
+{
+width:100%;
+min-width:inherit;
+}
+
+.dashboard-work-area, .parent-wrapper{
+top:77px;
+}
+
+}
+
+
+@media only screen and (max-width : 1024px) 
+{
+
+.login-wrap img,
+.grey-top-header
+{
+border:0px solid red;
+}
+
+}
+
+
+@media only screen and (max-width : 970px) 
+{
+
+.login-wrap img,
+.grey-top-header
+{
+border:0px solid yellow;
+}
+
+.content_1{
+display:none;
+width:100%;
+top:30px;
+}
+
+.content_2{
+margin:0;
+width:100%;
+top:30px;
+}
+
+.content_3{
+display:none;
+width:100%;
+top:30px;
+}
+
+.dashboard-tab{
+display:block;
+}
+
+.content_1 .tag{
+display:table;
+padding:2px 8px;
+}
+
+.popup_menu{
+top:60px;
+}
+
+.page-single .content_main,
+.settings-page .content_main
+{
+width:100%;
+margin:0;
+}
+
+/* css fixed for nav menu*/
+#layout_1 ul.menu li.mobile-nav-wrap,
+.dashboard #layout_1 ul.menu li.desktop-nav-wrap
+{
+display:table-cell;
+}
+#layout_1 ul.menu li.desktop-nav-wrap,
+.dashboard #layout_1 ul.menu li.mobile-nav-wrap,
+.back-dashboard
+{
+display:none;
+}
+
+.content_1{
+z-index:100;
+width:200px;
+}
+.left-menu ul li{
+padding:10px;
+}
+.left-menu ul li a{
+font-size:16px;
+}
+
+}
+
+@media only screen and (max-width : 750px) 
+{
+
+.login-wrap img,
+.grey-top-header
+{
+border:0px solid green;
+}
+
+.search-team-wrap #search_map{
+display:none;
+}
+
+.top-header-logo{
+display:none;
+}
+.top-header-nav{
+margin-top:8px;
+}
+
+
+.task-remaining-wrap{
+display:none !important;
+}
+
+.top-header-nav a.green-button{
+display:table !important;
+margin:auto;
+}
+#layout_1 .left{
+display:table;
+margin:auto;
+padding-top:10px;
+}
+
+.dashboard-work-area, .parent-wrapper{
+top:135px;
+}
+
+
+.search-team-wrap #team{
+display: block;
+margin: auto;
+width: 50%;
+}
+
+.dashboard-work-area, .parent-wrapper{
+top:125px;
+}
+
+.company-logo{
+right:0;
+top:0;
+position:relative;
+margin-bottom:20px;
+}
+
+.content_1 .row.box .task-details{
+display:block;
+}
+
+.task-action-button a{
+margin-bottom:10px;
+}
+
+}
+
+@media only screen and (max-width : 480px) 
+{
+
+.login-wrap img,
+.grey-top-header
+{
+border:0px solid blue;
+}
+
+.login-wrap img{
+max-width:140px;
+}
+
+.login-wrap{
+width:auto;
+}
+
+#layout_1 ul.menu li a{
+font-size:25px;
+}
+
+.dashboard-work-area, .parent-wrapper{
+top:120px;
+}
+.popup_menu{
+left:0;
+}
+
+}
+
+
+@media only screen and (max-width : 320px)
+{
+
+
+.login-wrap img,
+.grey-top-header
+{
+border:0px solid orange;
+}
+
+}
