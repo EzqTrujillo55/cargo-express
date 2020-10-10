@@ -38,19 +38,19 @@
                                 <nav> 
                                     <ul id="navigation">                                                                                          
                                         <li><a href="index.php">Home</a></li>
-
+                                        <div class="ml-20" style="display:inline">
+                                        <a style="color: white !important" href="<?php
+                                echo Yii::app()->createUrl('/user/login', array())
+                                ?>" class="btn btn-warning">  <i class="fa fa-user"></i>Ingreso Clientes</a>
+                                <a  style="color: white !important" href="<?php
+                                echo Yii::app()->createUrl('/front/registro', array())
+                                ?>" class="btn btn-info"><i class="fa fa-user-plus"></i>Afíliate</a>
+                                </div>
                                     </ul>
                                 </nav>
                             </div>
                             <!-- Header-btn -->
-                            <div class="header-right-btn d-none d-lg-block ml-20">
-                                <a href="<?php
-                                echo Yii::app()->createUrl('/user/login', array())
-                                ?>" class="btn btn-warning">  <i class="fa fa-user"></i>Ingreso Clientes</a>
-                                <a href="<?php
-                                echo Yii::app()->createUrl('/front/registro', array())
-                                ?>" class="btn btn-info"><i class="fa fa-user-plus"></i>Afíliate</a>
-                            </div>
+                           
                         </div>
                     </div> 
                     <!-- Mobile Menu -->

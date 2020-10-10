@@ -93,22 +93,27 @@
                             if ($provincia_list = Driver::getProvinciaList()) {
                                 $provincia_list = Driver::toList($provincia_list, 'id', 'nombre', Driver::t("Por favor seleccione una provincia de la lista"));
                             }
+                            
+                           
+                            
                             ?>
 
                             <div class="top20">
                                 <h5 style="font-weight:bold;" class="dropoff_action_1"><?php echo t("Datos Origen") ?></h5>
-
+                                
                                 <div class="row top10">
                                     <div class="col-md-6 ">
+                                        <p>Peso</p>
                                         <?php
                                         echo CHtml::textField('peso', '', array(
                                             'placeholder' => Driver::t("Peso"),
                                             'class' => "validate numeric_only",
-                                            'data-validation' => "required"
+                                            'data-validation' => "required",
                                         ))
                                         ?>
                                     </div> <!--col-->
                                     <div class="col-md-6 ">
+                                        <p>Número de Gestiones</p>
                                         <?php
                                         echo CHtml::textField('no_gestiones', '', array(
                                             'placeholder' => Driver::t("Número de Gestiones"),
@@ -137,11 +142,14 @@
                                 <div class="row top10">
                                     <div class="col-md-12 ">
                                         <?php
-                                        echo CHtml::textField('direccion_origen', '', array(
-                                            'class' => 'direccion_origen',
-                                            'placeholder' => Driver::t("Dirección Origen"),
-                                            'required' => true
-                                        ));
+                                         if ($direccionOrigen_list = Driver::getDireccionOrigenList()) {
+                                            $direccionOrigen_list = Driver::toList($direccionOrigen_list, 'id_cliente', 'direccion_origen',  Driver::t("Por favor seleccione una dirección de la lista"));
+                                        }
+                                        echo CHtml::dropDownList('id_cliente', '', (array) $direccionOrigen_list
+                                        , array(
+                                    'class' => "id_cliente chosen",
+                                    'required' => true
+                                ))
                                         ?>
                                     </div> <!--col-->
                                     <div class="col-md-12 mt-2">
@@ -189,21 +197,31 @@
                                         ?>
                                     </div> <!--col-->
                                     <div class="col-md-6 ">
-                                        <select required="true" class="ciudad_destino_id chosen" name="ciudad_destino_id" id="ciudad_destino_id">
-                                            <option><?php echo Driver::t("Por favor seleccione una ciudad de la lista") ?></option>
-                                        </select>
+                                       <?php
+                                       if ($ciudades_list = Driver::getCiudadesList()) {
+                                        $ciudades_list = Driver::toList($ciudades_list, 'id', 'nombre',  Driver::t("Por favor seleccione una ciudad de la lista"));
+                                    }
+                                    echo CHtml::dropDownList('id', '', (array) $ciudades_list
+                                    , array(
+                                'class' => "id chosen",
+                                'required' => true
+                            ))
+                            ?>
                                     </div>
                                 </div> <!--row-->
 
                                 
                                 <div class="row top10">
                                     <div class="col-md-12 ">
-                                        <?php
-                                        echo CHtml::textField('direccion_destino', '', array(
-                                            'class' => 'direccion_origen',
-                                            'placeholder' => Driver::t("Dirección Destino"),
-                                            'required' => true
-                                        ));
+                                    <?php
+                                         if ($direccionDestino_list = Driver::getDireccionDestinoList()) {
+                                            $direccionDestino_list = Driver::toList($direccionDestino_list, 'id_cliente', 'direccion_destino',  Driver::t("Por favor seleccione una dirección de la lista"));
+                                        }
+                                        echo CHtml::dropDownList('id_cliente', '', (array) $direccionDestino_list
+                                        , array(
+                                    'class' => "id_cliente chosen",
+                                    'required' => true
+                                ))
                                         ?>
                                     </div> <!--col-->
                                     <div class="col-md-12 mt-2">

@@ -271,13 +271,15 @@ $this->renderPartial('/front/busca-orden', array(
                 <h2 class="section-title">CONTÁCTENOS</h2>
             </div>
             <div class="row">       
-                <div class="col-lg-8 col-md-12 col-xs-12">
+                <div class="col-lg-7 col-md-12 col-xs-12" style="
+    padding-right: 0px;">
                     <div class="video_style text-center">
                         <video id="play" src="<?php Yii::app()->baseUrl ?>/assets/video/1.mp4" width="590" height="355"  preload="none" controls>
                         </video>
                     </div>   
                 </div>
-                <div class="col-lg-4 col-md-12 col-xs-12">
+                <div class="col-lg-5 col-md-12 col-xs-12" style="
+    padding-right: 0px;">
                     <div class="contact-block">
                         <form id='EnviaMail'  method="POST" onsubmit="return false;">
                             <?php echo CHtml::hiddenField('action', 'enviarFormularioContacto') ?>
@@ -286,20 +288,20 @@ $this->renderPartial('/front/busca-orden', array(
                                     <div class="form-group">
 
                                         <input type="text" class="form-control" id="name" name="name" placeholder="Nombre y Apellido" required data-error="Por favor ingrese nombre y apellido">
-                                        <span style="position:absolute; right:25px;top:20px;" class="fa fa-user"></span>
+                                        <span style="position:absolute; right:21px;top:15px;" class="fa fa-user"></span>
                                         <div class="help-block with-errors"></div>
                                     </div>                                 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <span style="position:absolute; right:25px;top:20px;" class="fa fa-envelope-o"></span>
+                                        <span style="position:absolute; right:21px;top:15px;" class="fa fa-envelope-o"></span>
                                         <input type="text" placeholder="Correo Electrónico" id="email" class="form-control" name="email" required data-error="Por favor ingrese su email">
                                         <div class="help-block with-errors"></div>
                                     </div> 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <span style="position:absolute; right:25px;top:20px;" class="fa fa-mobile"></span>
+                                        <span style="position:absolute; right:21px;top:15px;" class="fa fa-mobile"></span>
                                         <input type="number" placeholder="Teléfono" id="telefono" class="form-control" name="telefono" required data-error="Por favor ingrese su teléfono">
                                         <div class="help-block with-errors"></div>
                                     </div> 
@@ -307,7 +309,7 @@ $this->renderPartial('/front/busca-orden', array(
 
                                 <div class="col-md-12">
                                     <div class="form-group"> 
-                                        <span style="position:absolute; right:25px;top:20px;" class="fa fa-comment-o"></span>
+                                        <span style="position:absolute; right:21px;top:15px;" class="fa fa-comment-o"></span>
                                         <input type="text" class="form-control" id="mensaje"  name="mensaje"  placeholder="Mensaje"  data-error="Escriba su mensaje" required/>
                                         <div class="help-block with-errors"></div>
                                     </div>

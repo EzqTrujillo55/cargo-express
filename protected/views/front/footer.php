@@ -1,17 +1,36 @@
+<head>
+    <style>
+        @media only screen and (min-width: 992px) {
+            a{
+            font-size: 1.2rem;
+            }
+        }
 
+        @media (max-width: 579px){
+    .video_style video {
+    height: auto !important;
+    width: 99% !important;
+    padding-bottom: 0px;
+    }
 
-<!--? Footer Start-->
-<div class="footer-area footer-bg">
-    <div class="container">
-        <div class="footer-top footer-padding">
+    .contact-block{
+        padding-top: 5% !important;
+    }
 
-            <!-- Footer Menu -->
-            <div class="row d-flex justify-content-between">
-                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Empresa</h4>
-                            <ul>
+    
+
+    
+}
+    </style>
+</head>
+<section class="footer-Content" style="background-color: black;width: 100%; color: white; position:relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-mb-12  text-center">
+                             <div class="upper-column info-box" style="color: white; padding-top: 0px;">
+                                    <div class="icon-box mt-4" style="color: white"></div>
+                                    <h3 style="color: white"><strong>EMPRESA</strong></h3>
+                                    <ul>
                                 <li><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/images-front/logo/logoCX.png" alt="" class="logo-dark" height="76" /></li>
                             </ul>
                             <ul>
@@ -19,85 +38,64 @@
                                     <a href=""><i class="fa fa-twitter"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </li>
-                            </ul>
+                            </ul>                               
+                                    </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <h4>Horarios de atención</h4>
-                            <ul>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-mb-12  text-center pt-4">
+                            <div class="widget">
+                                <h3 style="color: white"><strong>HORARIOS DE ATENCIÓN </strong></h3>
+                                <div class="menufooter">
+                                    <div class="row">
+                                        <div class="col-12">
+                                        <ul>
                                 <li><a href="#"> Lunes-Viernes 8am-6pm</a></li>
                                 <li><a href="#"> Sábado 8am-3pm</a></li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
-                    <div class="single-footer-caption mb-50">
-                        <div class="footer-tittle">
-                            <div class="footer-social">
-
-
+                                        </div>
+                                       
+                                    </div>
+                               
+                            </div>
                             </div>
                         </div>
-                        <!-- Footer Social -->
-                        <div class="footer-social ">
-                            <p class="info1">   <object style="border:0; height: 300px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.804164424385!2d-78.49176518524672!3d-0.15262659988863891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDknMDkuNSJTIDc4wrAyOScyMi41Ilc!5e0!3m2!1sen!2sec!4v1598922623975!5m2!1sen!2sec"></object>
-                            </p>
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <ul>
-                                        <li>Av. De la Prensa n47-239 y Gonzalo Salazar</li>
-                                        <li>02-2443178</li>
-                                    </ul>
-
-                                </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-mb-12  text-center mt-4">
+                            <div class="widget">
+                                <h3 style="color: white"><strong>CONTÁCTENOS</strong></h3>
+                                <div class="contact-footer">
+                                <div class="row">
+                                        <div class="col-12">
+                                             <a style="padding: 0 0 !important" class="nav-item nav-link  <?= (basename($_SERVER['PHP_SELF'])=="index.php")?"active":""; ?>" href="index.php"><i class="fa fa-home" aria-hidden="true"></i>  Inicio <span class="sr-only">(current)</span></a>
+                                             <a style="padding: 0 0 !important" class="nav-item nav-link <?= (basename($_SERVER['PHP_SELF'])=="testimonios.php")?"active":""; ?>" href="/user/login"><i class="fa fa-user" aria-hidden="true"></i> Ingreso Clientes</a>
+                                             <a style="padding: 0 0 !important" class="nav-item nav-link <?= (basename($_SERVER['PHP_SELF'])=="videos.php")?"active":""; ?>" href="/registro"><i class="fa fa-user-plus" aria-hidden="true"></i> Afíliate</a>
+                                             
+                
+                                        </div>
+                                       
+                                    </div>
+                                    
+                                </div> 
                             </div>
                         </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-mb-12  text-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.804096939861!2d-78.49334789329072!3d-0.15298997061993838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59ab1171f8fa3%3A0x104f093001add350!2sGonzalo%20Salazar%2C%20Quito%20170104!5e0!3m2!1ses-419!2sec!4v1602288646258!5m2!1ses-419!2sec" width="100%" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <p style="color: white">Av. De La Prensa N47-239 Y Gonzalo Salazar <br>02-2443178</p>
+                        </div>
+
+                        
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-12">
-                    <div class="footer-copy-right text-center">
-                        <p>
-                            Derechos &copy;<script>document.write(new Date().getFullYear());</script>  <?php echo strtoupper(FrontFunctions::getCompanyName()) ?>
-                        </p>
-                    </div>
+
+                
+                    
                 </div>
+            </section>
+            <div class="text-center" style="background-color: #9f0024; color: white">
+                          Derechos ©2020 CARGO XPRESS - Desarrollado por <a style="color:white; font-size: inherit" target="_blank" href="https://digytalscript.com/">DigytalScript </a> <?php echo date('Y'); ?>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Footer End-->
-<!--? Footer Start-->
-<div class="footer-area2 footer-bg">
-    <div class="container">
-        <div class="footer-bottom">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-12">
-                    <div class="footer-copy-right text-center">
-                        <p>
-                            Powered by Dygital Script
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Footer End-->
+
+
 
 <!-- Scroll Up -->
-<div id="back-top" >
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
 
 <a id="callnowbutton" class="fixed-bottom" href="tel:+593999979075">
     <span class="NoButtonText">Llame Ahora</span></a>

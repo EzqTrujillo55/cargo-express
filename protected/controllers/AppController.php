@@ -744,9 +744,9 @@ class AppController extends CController {
                         $val['direccion_destino'],
                         $val['ciudad_destino'],
                         $val['detalle'],
-                        $date_created,
+                        $val['date_created'],
                         $val['estado'],
-                        'mensajero',
+                        $val['nombre'] . ' ' . $val['apellido'],
                         $val['no_gestiones'], 
                         $val['peso']
                         /*$val['tipo_servicio'],

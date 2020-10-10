@@ -2267,6 +2267,48 @@ from {{driver_task_view}} a
         return false;
     }
 
+
+    public static function getDireccionOrigenList() {
+        $db = new DbExt;
+        $stmt = "
+		SELECT * FROM
+		{{orden}}	
+		";
+        //echo($stmt);
+        if ($res = $db->rst($stmt)) {
+            return $res;
+        }
+        return false;
+    }
+
+    public static function getDireccionDestinoList() {
+        $db = new DbExt;
+        $stmt = "
+		SELECT * FROM
+		{{orden}}	
+		";
+        //echo($stmt);
+        if ($res = $db->rst($stmt)) {
+            return $res;
+        }
+        return false;
+    }
+
+    public static function getCiudadesList() {
+        $db = new DbExt;
+        $stmt = "
+		SELECT * FROM
+        {{locacion}}
+        WHERE 
+        id_padre is not null	
+		";
+        //echo($stmt);
+        if ($res = $db->rst($stmt)) {
+            return $res;
+        }
+        return false;
+    }
+
     public static function getClientesList() {
         $db = new DbExt;
         $stmt = "
